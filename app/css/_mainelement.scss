@@ -1,0 +1,343 @@
+@import "_fonts";
+@import "_colors";
+@import "_mixin";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+i
+{
+    font-style: normal;
+}
+
+ul
+{
+    list-style:none;
+    padding: 0;
+    
+}
+li
+{display:block;}
+a{
+    
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+}
+.d-flex
+{width: 100%;}
+
+body
+{
+    font-size:16px;
+}
+
+i{
+    font-family: $fontawesom;
+}
+h1{
+color:$font-color1;
+font-family: $font-bold;
+font-size: 2rem;
+text-transform: uppercase;
+@include Smaler_then_600{
+      font-size: 1.5rem;
+    }
+}
+h2{
+color:$font-color1;
+font-family: $font-bold;
+font-size: 1.5rem;
+text-transform: uppercase;
+@include Smaler_then_600{
+      font-size: 1.375rem;
+    }
+}
+h3{
+color:$font-color1;
+font-family: $font-medium;
+font-size: 1.25rem;
+text-transform: uppercase;
+ .h3_black
+ {
+     color: $black;
+ }
+ @include Smaler_then_600{
+      font-size: 1.25rem;
+    }
+}
+h4{
+color:$font-color1;
+font-family: $font-medium;
+font-size: 1.12rem;
+text-transform: uppercase;
+@include Smaler_then_600{
+      font-size: 1rem;
+    }
+}
+.text
+{
+color:$black;
+font-family: 'Arial Narrow', Arial, sans-serif;
+font-size: 1.12rem;
+text-align: justify;
+padding: 0 1%;
+// text-transform: uppercase;
+} 
+.text_up
+{
+margin-top: 1rem;
+color:$bg_color1;
+
+font-family: 'Arial Narrow', Arial, sans-serif;
+font-size: 1.42rem;
+text-align: justify;
+padding: 0 1%;
+// text-transform: uppercase;
+}
+.ballon
+{
+  
+    box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+    background-color: $color1;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    display: block;
+    &::before
+    {
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg);
+    }
+    &::after
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color: #caddea transparent transparent transparent;
+    }
+ }
+
+ .ballon_blue
+{
+  
+    box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+    background-color: $font-color1;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    display: block;
+    &::before
+    {
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg);
+    }
+    &::after
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color:$font-color1 transparent transparent transparent;
+    }
+ }
+
+  .ballon_white
+{
+  
+    box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+    background-color: $white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    display: block;
+    &::before
+    {
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg);
+    }
+    &::after
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color:$white transparent transparent transparent;
+    }
+ }
+
+ .ballon_btn_red
+{
+  
+    box-shadow: 2px 4px 7px rgba(155, 182, 190, 0.55);
+    background-color: $bg_color4_btn_ordernow;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    display: block;
+    &::before
+    {
+    content: '';
+    display: block;
+    position: absolute;
+    background: transparent;
+    left: 10px;
+    bottom: -12px;
+    box-shadow: 4px 4px 7px #9bb6be;
+    width: 3px;
+    height: 17px;
+    transform: rotate(50deg);
+    }
+    &::after
+    {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 16px 19px 0 0;
+        border-color:$bg_color4_btn_ordernow transparent transparent transparent;
+    }
+    &:hover
+    {
+        background: $bgcolor4_btn_ordernow_hover;
+        &::after
+        {
+            content: '';
+            border-color: $bgcolor4_btn_ordernow_hover transparent transparent transparent;
+        }
+    }   
+ }
+
+
+
+ .fifteet_percent_off
+{
+   
+    font-family: $font-bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 0;
+    height: 100%;
+    ._percent1
+    {
+        color:$bg_color4_btn_ordernow;
+        font-size: 3rem;
+    }
+    ._percent2
+    {
+        color:$bg_color4_btn_ordernow;
+        font-size: 2.5rem;
+    }
+    ._percent3
+    {
+        color:$bg_color4_btn_ordernow;
+        font-size: 2.2rem;
+    }
+    ._percent4
+    {
+        color:$bg_color2;
+        font-size: 1.5rem;
+    }
+  
+}
+
+
+.btn_read_more
+{
+   background:$bg_color2;
+   color: $white;
+   padding: 4%;
+   width: 50%;
+   text-align: center;
+   margin:4% 0;
+   position: relative;
+   font-family: $font-regular;
+   font-size: 1rem;
+   text-transform: uppercase;
+   &:hover
+   {
+       background:$color1;
+       color: $bg_color1;
+   }
+   
+}
+.social_icon
+    {
+        width: 10%;
+        height: 60%;
+        margin-left: 5%;
+    }
+    .fb{
+        align-self: center;
+        height: 2rem;
+        width: 2rem;
+        background: url("../svg/Svg/Facebook.svg")no-repeat 0 0/100% 100%;
+        &:hover{
+            background: url("../svg/Svg/Facebook2.svg")no-repeat 0 0/100% 100%;
+        }
+    }
+    .twiter{
+        align-self: center;
+         height: 2rem;
+        width: 2rem;
+        background: url("../svg/Svg/Twiter.svg")no-repeat 0 0/100% 100%;
+        &:hover{
+            background: url("../svg/Svg/Twiter2.svg")no-repeat 0 0/100% 100%;
+        }
+    }
+    .pinterest{
+        align-self: center;
+         height: 2rem;
+        width: 2rem;
+        background: url("../svg/Svg/Pinterest.svg")no-repeat 0 0/100% 100%;
+        &:hover{
+            background: url("../svg/Svg/Pinterest2.svg")no-repeat 0 0/100% 100%;
+        }
+    }
+
