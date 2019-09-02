@@ -1,0 +1,31 @@
+/*
+* Custom Bootstrap
+*/
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
+
+/*
+* Font-awesome
+*/
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+
+ 
+
+@import "_mainelement";
+@import "_fonts";
+@import "_style";
+@import "_media";
+@import "_colors";
+@import "_header_top";
+@import "_mixin";
+@import "_footer";
+@import "_header_img";
+@import "_get_prise_quote_row";
+@import "_essay_writing_chalenging";
+@import "_why_order_paper";
+@import "_how_it_works";
+@import "_404_err";
+@import "_blog_post.scss";
+@import "_blog.scss";
+@import "_order.scss";
+@import "_text_desctop";
+
